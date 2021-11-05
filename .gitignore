@@ -1,2 +1,11 @@
+#Latex
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
 #Mac
 *.DS_Store
