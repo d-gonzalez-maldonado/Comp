@@ -7,5 +7,6 @@
 *.log
 *.out
 *.gz
+*.pdf
 #Mac
 *.DS_Store
