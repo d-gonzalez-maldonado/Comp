@@ -373,7 +373,7 @@ we dive into individual student project completion data.
     % \caption{\ts{} Overall Student Performance Results}
     
 \end{figure}
-\subsection{Daily \Scratchencore{} Activity Over Time}
+\subsection{\Scratchencore{} Activity Over Time}
 We begin by presenting the \Scratchencore{} project activity levels. Figure \ref{fig:daily_remixes}
  represents every Scratch project that was remixed from the Scratch Encore account and 
  then publicly shared from 2018 to 2021. The red bars represent the number of daily remixes 
@@ -392,263 +392,197 @@ This level of detail allows us to present a picture of just how suddenly student
 
 
 \stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Instruction everywhere stopped immediately following the federal government’s declaration of a national lockdown.}
+\textit{Finding \arabic{findingnum}: Instruction everywhere stopped immediately following the federal government’s declaration of a national lockdown; Instruction rebounded to pre-pandemic levels during the post-pandemic year.}
 Furthermore, we see no evidence that any substantial level of instruction was accomplished
 following the transition to emergency learning. By contrast, instruction levels rebounded
 strongly during the post pandemic year with the first quarter of the 2020-2021 
 school year showing noticeably greater activity levels than during either of the preceding 
 years. The level of instruction then remains steady for the remainder of the year with less dramatic 
 peaks and valleys than in the pre-pandemic year.
-
-
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Students attempted the most ``Observe'' questions, followed by ``Explore'' questions, and the least ``Predict'' questions.}
-
-There is a statistically-significant association between answer type (if the student answered the question correctly, incorrectly, or not at all) and question type (\begin{math}\chi=143.7, p=2.2\times10^{-6}.01\end{math}). Across modules, students attempted questions within each section of the worksheet at different rates. Students attempted a larger percentage of ``Observe'' questions (which asked students to observe and report what they see happens when they run the code) and ``Explore'' questions (which asked students to make small modifications to existing code and tell what happens) than when they were asked to hypothesize about the function of a block (``Predict''). 
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Students correctly answered ``Observe'' questions at a higher rate compared to ``Predict'' and ``Explore'' questions.} 
-
-As shown in Figure \ref{fig:observe_predict_explore}, students answered ``Predict'' and ``Explore'' questions with comparable correctness (73.47\% and 73.61\% respectively), while answering ``Observe'' questions correctly at a higher rate (79.67\%). ``Explore'' questions had the highest rate of incorrect responses (18.68\%) compared to 15.73\% incorrect for ``Predict'' questions and and 17.67\% incorrect for ``Observe'' questions. The ``Observe'' questions may have been answered more correctly because students need only view the program to answer them, whereas the ``Predict'' questions asks students to link behaviors with blocks and the ``Explore'' questions require students to make changes to the code before answering the questions.
-
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Performance varied across all modules.}
-Figure \ref{fig:permodule} shows the performance in each module. While performance was strong in 3 modules, students achieved only 64\% accuracy, on average, for M3:animation. statistical analysis revealed that student worksheet correctness differed across the modules (\begin{math}F(3,668)=12.94, p=3.18\times10^{-8}, \eta^2=.0549\end{math}). Post-hoc analysis indicated that correctness was statistically-significantly different between M3:Animation and M1:Basics (\begin{math}p=1\times10^{-7}\end{math}), M2:Events (\begin{math}p=4.7\times10^{-6}\end{math}), and M4:CondLoops (\begin{math}p=6.12\times10^{-4}\end{math}). This indicates that the technique works overall, but revision may be necessary on that module.
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: There was little correlation between \ts{} worksheet score and project score.}
-
-Figures \ref{fig:avg_modify} and \ref{fig:avg_create} display the correlation between the average of students' scores in \ts{} and the average of students' scores in their Modify and Create projects, respectively. The correlation is low for both the Modify ($R^2$ = 0.012) and Create ($R^2$ = 0.042) projects. %The correlation between the Modify project and \ts{} score was slightly higher, potentially because this project in the Modify activity is the same project as students are introduced to through the \ts{} worksheet.%
-This result shows there to be little connection between performance on the \ts{}  worksheets and performance on the projects. As we will discuss in Section~\ref{sec:compare}, this aligns with a different study on 4th-grade students.
-
 \begin{figure}
      \centering
-     \begin{subfigure}{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Average Modify vs. TIPP&SEE.png}}
-        \caption{Average Modify scores vs. Average \ts{} scores}
-        \label{fig:avg_modify}
-    \end{subfigure}
-    \begin{subfigure}{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Average Create vs. TIPP&SEE.png}}
-        \caption{Average Create scores vs. Average \ts{} scores}
-        \label{fig:avg_create}
-    \end{subfigure}
+     \includegraphics[width=\textwidth]{images/graphs/AllTeacherRegistrations.png}
+     \caption{\Scratchencore{} New Teacher Registrations}
+     \label{fig:teacher_registrations}
+    % \begin{subfigure}[t]{0.49\textwidth}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Observe_Predict_Explore_Overall.png}}
+    %     \caption{Student Performance by Question Type}
+    %     \label{fig:observe_predict_explore}
+    % \end{subfigure}
+    %     \hfill
+    %     \begin{subfigure}[t]{0.49\textwidth}
+    % \label{fig:curriculum_factors}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Module.png}}
+    %     \caption{\ts{} Scores Compared Across \Scratchencore{} Modules}
+    %     \label{fig:permodule}
+    % \end{subfigure}
+    % \caption{\ts{} Overall Student Performance Results}
     
-    \caption{Average Modify and Create scores vs. Average \ts{} worksheet scores}
 \end{figure}
-
-
-\subsection{Potential Performance Influences}
-While overall performance was good, aggregate performance only tells us how students performed on average and could potentially hide evidence of inequity. That is, an equitable outcome would involve the consistency in performance across students based on a variety of factors. In this section, we explore many different factors that could influence performance.
-
-\subsubsection{Classroom-Related Factors} 
-We begin with classroom factors that all students in a classroom share: grade level and teacher.
-
+Before an instructor is able to access the lesson plans and other class materials that make
+up the \Scratchencore{} they must first fill out a simple registration form. Figure 
+\ref{fig:teacher_registrations} shows the number of new teachers registering to
+receive access to the scratch encore curriculum on any given month. The more saturated
+colors depict instructors from our partner district (as determined by the email they used
+during registration) while the darker colors represent everyone else. 
+Of note, is the fact that there is a huge increase in the total number of registrations starting
+the summer of the pandemic school year. This is particularly noticeable during July and
+August of 2020. A factor contributing to the increase is the fact that during the summer
+of 2020 our lab started online PD courses for teachers in our partner district; however,
+it is clear that the overwhelming majority of new registrations came from teachers who
+were not part of our partner district. 
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: The increase in project activity observed
+during the 2020-2021 online school year was predominantly driven by new teachers
+introducing the \Scratchencore{} curriculum to their classrooms for the first time.}\\
+\subsection{Partner District Teacher and Student Data}
+We now transition to discussing data gathered from our partner district; the data presented
+was gathered from teachers who taught the \Scratchencore{} for at least two out
+of the three years covered, one of which being the pandemic year.
 
 \begin{figure}
      \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Grade.png}}
-        \caption{\ts{} Worksheet Composite Scores of Students in Various Middle-School Grade Levels, by \Scratchencore{} Module}
-        \label{fig:grade_factors}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Teachers.png}}
-        \caption{\ts{} Worksheet Composite Scores of Students with Different Teachers, by \Scratchencore{} Module}
-        \label{fig:teacher_factors}
-    \end{subfigure}
-    \caption{\ts{} Scores Compared Across Classroom-Level Factors (Grade and Teacher)}
-    \label{fig:classroom_factors}
+     \includegraphics[width=\textwidth]{images/graphs/Modules Completed.png}
+     \caption{Number of \Scratchencore{} Modules Completed By Teachers In Partner District}
+     \label{fig:modules_completed}
+    % \begin{subfigure}[t]{0.49\textwidth}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Observe_Predict_Explore_Overall.png}}
+    %     \caption{Student Performance by Question Type}
+    %     \label{fig:observe_predict_explore}
+    % \end{subfigure}
+    %     \hfill
+    %     \begin{subfigure}[t]{0.49\textwidth}
+    % \label{fig:curriculum_factors}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Module.png}}
+    %     \caption{\ts{} Scores Compared Across \Scratchencore{} Modules}
+    %     \label{fig:permodule}
+    % \end{subfigure}
+    % \caption{\ts{} Overall Student Performance Results}
+    
 \end{figure}
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Grade level was associated with performance for some modules.}
-
-Figure \ref{fig:grade_factors} illustrates the difference in \ts() worksheet performance by grade level. For all modules except M2:Events, grade level was linked to worksheet correctness (M1:Basics:\begin{math}F(3, 255)=6.67, p<.01, \eta^2=.0728; \text{M3:Animation:}\chi=23.79, p<.01, \eta^2=.0747; \text{M4:CondLoops} \chi=4.60, p<.05, \eta^2=.0118\end{math}). Post-hoc comparisons for M1:Basics reveal that 6th graders statistically-significantly out-performed both 4th (\begin{math}p=.0127\end{math}) and 7th graders(\begin{math}p=9.32\times10^{-4}\end{math}), and that 5th graders out-performed 7th graders (\begin{math}p=8.64\times10^{-3}\end{math}). It could be that 7th grade students found this Scratch introduction too easy and were not careful in answering the questions. For M3:Animation, the module with the most difficult content overall, 7th graders performed better than 5th graders (\begin{math}p<.01\end{math}). For M4:CondLoops, 6th graders performed better than 5th graders (\begin{math}p<.05\end{math}). This suggests that some modules may be too difficult or too easy for students in specific grade levels and, therefore, more care needs to be taken in tailoring content to different grade levels.
-
-%For M2:Events, students across all grade levels completed the worksheets with similar correctness M2:Events:(\begin{math} F(2,209)=1.76, p=.175\end{math}). In contrast, for M1:Basics, M3:Animation and M4:CondLoops, grade level was linked to worksheet correctness M1:Basics:(\begin{math}F(3, 255)=6.67, p<.01, \eta^2=.0728; \text{M3:Animation:}\chi=23.79, p<.01, \eta^2=.0747; \text{M4:CondLoops} \chi=4.60, p<.05, \eta^2=.0118\end{math}). Post-hoc comparisons for M1:Basics reveal that 6th graders statistically-significantly out-performed both 4th and 7th graders, and that 5th graders out-performed 7th graders (\begin{math}p<.05\end{math}). It could be that 7th grade students find the material too easy and are not careful in answering the questions. For M3:Animation, 7th graders performed better than 5th graders (\begin{math}p<.01\end{math}). For M4:CondLoops, 6th graders performed better than 5th graders (\begin{math}p<.05\end{math}). This suggests that some modules may be more difficult for students in specific grade levels and, therefore, we may need to develop more support for students in some modules.
-
-\textit{Finding \arabic{findingnum}: Teacher was associated with performance for all modules.}
-Performance broken down by teacher is depicted in Figure \ref{fig:teacher_factors}.  For all modules, the teacher was significantly linked to worksheet correctness M1:Basics:(\begin{math} \chi=38.17, p<.01, \eta^2=.104; \text{M2:Events:} \chi=19.27, p<.01, \eta^2=.0442, \text{M3:Animation:} \chi=29.68, p<.01, \eta^2=.0881, \text{M4:CondLoops} \chi=12.63, p<.01, \eta^2=.0350\end{math}). Teachers are likely to implement the curriculum and learning strategies differently. Additional research is needed to better understand how different teaching techniques influence student performance (on \ts{} worksheets as well as learning).
-
-
-\subsubsection{Student-Related Factors} 
-Next we present results considering relevant academic characteristics of students, namely the effect of their previous math and coding experience on their performance with \ts{}.
-
-\stepcounter{findingnum}
- \textit{Finding \arabic{findingnum}: Students using \ts{} with parent-reported mathematics struggles performed equally well to their peers that did not report mathematics struggles on \ts worksheets for some modules, and under-performed compared to their peers in others.}
- 
- \begin{figure}
-     \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Math.png}}
-        \caption{\ts{} Worksheet Composite Scores of Students who do and do not Self-Reportedly Struggle on Mathematics Homework, by \Scratchencore{} Module}
-        \label{fig:math_struggles}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Previous_Experience.png}}
-    \caption{Average \ts{} Worksheet Composite Scores of Students with Various Combinations of Levels of Informal and In-School Programming Experience, by \Scratchencore{} Module} 
-    \label{fig:progexp}
-    \end{subfigure}
-    \caption{\ts{} Scores Compared Across Levels of Previous STEM Experience}
-    \label{fig:math_programming}
-\end{figure}
-
-Figure \ref{fig:math_struggles} presents the average composite \ts{} worksheet scores of students whose parents indicated that the student has struggled to complete their mathematics homework in the past compared to those who did not struggle. The average \ts{} composite score for students with mathematics struggle was 73.50\% compared to 73.25\% for students with no reported difficulty. Our statistical analysis showed that there was no significant difference in performance on \ts{} worksheets between students with and without parent-reported struggles in math in M2:Events and M4:CondLoops (\begin{math} F(2,139)=1.23, p=0.295; \text{M4:CondLoops:} \chi=0.00367, p=0.952\end{math}). In contrast, students who struggled with mathematics under-performed on M1:Basics and M3:Animation (M1:Basics:\begin{math} F(2, 147)=3.17, p<.05, \eta^2=.0414; \text{M3:Animation:} \chi=4.09, p<0.05, \eta^2=.0187\end{math}). The modules cover different topics and some topics may require a better understanding of math concepts than others.
-
-\stepcounter{findingnum}
- \textit{Finding \arabic{findingnum}: Students using \ts{} performed equally well on worksheets regardless of their previous experience with programming.}
-
-Figure \ref{fig:progexp} presents the average composite scores of students stratified by their experience with programming in an informal or school setting. While students with only informal experience did slightly better than the others (87.29\% vs 76.34-78.75\%), these differences were not statistically-significant (M1:Basics:\begin{math} \chi=4.94, p=.176; \text{M2:Events:} \chi=4.25, p=.236; \text{M3:Animation:} \chi=.820, p=.235; \text{M4:CondLoops:} \chi=2.19, p=.532\end{math}). These results are promising and indicate that \ts{} is effective in serving as an equitable learning strategy despite students' previous experiences as reported by their parents.
-
-\subsubsection{Question-Related Factors} 
-We now delve deeper into individual question differences. The goal was to identify individual questions on which students performed worse than others, identify potential factors that distinguish the poorly-performing from well-performing questions, and perform statistical tests to determine whether that factor correlated with performance. Here, we present the 2 factors we identified that were statistically correlated with differences in performance.
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Students are more likely to answer questions and to do so accurately when the block or concept in question has a real-world, common-sense, everyday interpretation.}
-
-%Figure \ref{fig:everyday_school} illustrates the differences in answer correctness and answer rate for \ts{} worksheet questions when divided by whether they were asking students about a concept which matched with its real-world interpretation (``Everyday True Positive''), did not match with its real-world interpretation (``Everyday False Positive''), or did not have a straightforward real-world interpretation to begin with and relied primarily on knowledge gained in school settings (``Mathematics''). The figure displays the percent of each response type (correct, incorrect, and blank) in each category. We found a statistically-significant association between response type and the type of knowledge used for a concept (\begin{math}\chi=55.89, p<.01\end{math}).
-
-
-Figure \ref{fig:e_ef_s} illustrates the differences in answer rate for ``Predict'' and ``Explore''\ts{} worksheet questions when categorized by whether they were asking students about a concept which matched with its real-world interpretation (``Everyday True Positive''), did not match with its real-world interpretation (``Everyday False Positive''), or did not have a straightforward real-world interpretation to begin with and relied primarily on knowledge about the Cartesian system (``X-Y Coordinate''). The figure displays the percent of each response type (correct, incorrect, and blank) in each category. Aggregating both ``Predict'' and ``Observe'' questions, we found a statistically-significant association between response type and the type of knowledge used for a concept (\begin{math}\chi=23.39, p<.01\end{math}). This trend still held true when ``Predict'' and ``Explore'' questions were analyzed separately (``Predict'':\begin{math}\chi=14.604, p<.01\end{math}, ``Explore'':\begin{math}\chi=15.173, p<.01\end{math}). ``Everyday True Positive'' questions were answered correctly 76.01\% and whereas only 65.38\% of ``Everyday False Positive'' questions and 69.16\% of ``Mathematics'' questions were answered correctly. Furthermore, students only left 9.26\% of ``Everyday True Positive'' questions blank while leaving 19.23\% of ``Everyday False Positive'' questions blank and 12.85\% of ``X-Y Coordinate'' questions blank. 
-
-
-
-%Additionally, students answered more ``Mathematics'' questions incorrectly (17.91\%) than ``Everyday True Positive'' (15.23\%) and ``Everyday False Positive'' (9.93\%) questions.
-%This data shows that questions testing blocks or concepts that require knowledge about the Cartesian coordinate system are the most likely to be answered incorrectly by middle-grade students when engaging with the \ts{} learning strategy and questions testing blocks or concepts that match their everyday common sense interpretation are the most likely to be answered and answered correctly. This behavior may occur because students are associating those blocks or concepts with concepts they have learned in other subjects. Therefore, students may be less comfortable blocks that ask students to use the coordinate system. 
-
-%This data shows that questions testing blocks or concepts that are connected to a mathematics-knowledge meaning are the most likely to be skipped or answered incorrectly by middle-grade students when engaging with the \ts{} learning strategy and questions testing blocks or concepts that match their everyday common sense interpretation are the most likely to be answered. This behavior may occur because students are associating those blocks or concepts with concepts they have learned in other subjects. Therefore, students who may be less comfortable with certain blocks or concepts, such as variables or blocks that ask students to use the coordinate system.
-
-% this is the ``so what'' but maybe it belongs in the discussion? I put it both places to decide where it goes better:
-
-%\ts{} and \Scratchencore were created and this study was conducted in order to provide equitable access to intermediate CS education to middle-grade students. In order to do so, it is important to understand if the \ts{} worksheets impacts student success on theoretical and abstract concepts. In finding 0, we demonstrate that parent-reported previous coursework in programming and mathematics does not impact student engagement or success. In this finding, however, we show that the \ts{} worksheets that include concepts from previous coursework in mathematics and CS do impact student engagement as they are the most frequently skipped and the most frequently answered incorrectly. This may be indicative of middle-school students' perceptions of the relevance of other coursework to their CS education. Further research could involve asking students if they perceived the ``Mathematics'' questions as implying that their performance in their other coursework was relevant to their success in their CS course work. This pre-judgement may cause students to simply not answer the question, if they feel it appears to require knowledge from other coursework.
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: The position of a question within a section was associated with students' attempt and correctness rates.} 
-
 \begin{figure}
      \centering
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/E_EF_S.png}}
-        \caption{Student Performance on \ts{} Worksheets by ``Everyday True Positive'', ``Everyday False Positive'', and ``X-Y Coordinate' Knowledge Categorization}
-        \label{fig:e_ef_s}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.49\textwidth}
-        \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Position.png}}
-    \caption{Question Performance by Question Position in Observe (O), Predict (P), and Explore (E) sections on \ts{} Worksheets} 
-    \label{fig:pos}
-    \end{subfigure}
-    \caption{Student Performance Compared Across Question Position and Question Knowledge-type}
-    \label{fig:position_es}
+     \includegraphics[width=\textwidth]{images/graphs/ProjectCompletion.png}
+     \caption{Average \Scratchencore{} Project Completion by Students in Partner District}
+     \label{fig:project_completion}
+    % \begin{subfigure}[t]{0.49\textwidth}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Observe_Predict_Explore_Overall.png}}
+    %     \caption{Student Performance by Question Type}
+    %     \label{fig:observe_predict_explore}
+    % \end{subfigure}
+    %     \hfill
+    %     \begin{subfigure}[t]{0.49\textwidth}
+    % \label{fig:curriculum_factors}
+    %     \raisebox{-\height}{\includegraphics[width=\textwidth]{graphs/Module.png}}
+    %     \caption{\ts{} Scores Compared Across \Scratchencore{} Modules}
+    %     \label{fig:permodule}
+    % \end{subfigure}
+    % \caption{\ts{} Overall Student Performance Results}
+    
 \end{figure}
 
-In Figure ~\ref{fig:position_es}, 3 lines are shown: correct (percent of attempted questions answered correctly), incorrect (percent of attempted questions answered incorrectly), and blank (percent of questions not attempted) as a function of the position of a question within a section of the worksheet, being the first, middle or last question in a given section. The students tended to attempt fewer questions as they progressed through each section, and the percentage of correct answers decreased through each section (\begin{math}\chi=76.06, p<.01\end{math}). There was similar percentage of incorrect answers from the first to the last question in the sections.
+Figure \ref{fig:modules_completed} shows the total number of completed modules by 
+teachers in our partner districts. As noted in figure \ref{fig:daily_remixes}, 
+no significant instruction took place after the lockdown measures were announced. It is 
+therefore not particularly surprising that module completion during the pandemic year 
+is so low. Far more interesting is the fact that module completion in the post pandemic 
+year is almost identical to the pre-pandemic year. 
+\\
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: Teachers were able to cover an equivalent amount
+of \Scratchencore{} modules with online instruction as they had been able to cover in person.}
+\\
+This plot shows the extent to which students completed the requirements for the
+\Scratchencore{} projects of a given module. It is worth noting
+that the daily school schedule of the post pandemic year was wildly different from that
+of the pre pandemic year: to prevent “zoom fatigue” our partner district  limited 
+continuous instructional time.
 
-In the ``Observe'' section, there were not any noticeable trends in the percentage of correct or incorrect answers from the first question to the last question. However, there was an increase in blank answers from the first to the last question (first: 5.31\%, middle: 9.81\%, last: 14.50\%). Similarly, we did not observe any noticeable trends in the percentage of correct or incorrect answers in the ``Predict'' sections. However, there was an increase from 5.31\% to 14.50\% in blank questions for the questions in the ``Predict'' section.
-
-The position of a question had the strongest impact on answer correctness in the ``Explore'' section. For this section, the final section of the worksheets, the percentage of correct answers changed from 81.22\% on the first question to 65.83\% on the last question. In this section, students incorrectly answered twice as many questions at the end of the section as they did at the start of the section (11.64\% to 23.28\%). Additionally, there was an increase in blank answers (first: 7.16\%, middle: 10.00\%, last: 10.94\%).
-
-Despite there being no clear trend in incorrectness/correctness with respect to question position in the individual ``Observe'' and ``Predict'' sections, the rate of blankness rose steadily from the first to the middle through the last question of all 3 sections. These findings may be due to the students becoming tired of answering questions from the first to last question in the sections.%there was an decrease in the average percentage of correct answers from the first to last question in all sections. Additionally, 
+The data shows that throughout all three years, students were generally able to complete
+the majority of the assignments. We know from figure \ref{fig:daily_remixes} that
+no instuction took place after the lockdown measures were announced which means
+that all the projects from the 2019-2020 school year were completed in a conventional
+classroom setting before the pandemic. 
+years.
+\\
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: Students were able to complete the \Scratchencore{}
+project requirements at similar rates during online learning as they had with in-person instruction.} 
 
 \section{Discussion}
-\label{sec:discussion}
-In this section, we place our findings in larger context. We first compare to previously-published work - on a different grade level (4th grade only) and a different curriculum - in order to understand what may be a trend related to \ts{} itself vs. what my be correlated with a specific grade level or implementation. Second, we look at findings that were unique to this study to relate them to potential reasons beyond this study.
+% \label{sec:discussion}
+% In this section, we place our findings in larger context. We first compare to previously-published work - on a different grade level (4th grade only) and a different curriculum - in order to understand what may be a trend related to \ts{} itself vs. what my be correlated with a specific grade level or implementation. Second, we look at findings that were unique to this study to relate them to potential reasons beyond this study.
 
-\subsection{Relating to Prior Work}
-\label{sec:compare}
-Here we compare the results in our study with the results of one previously-published study on
-student behavior using \ts{} \cite{franklin2020exploring}. There are 2 major differences between their study and our study. First, their study consisted of only 4th-grade classrooms, many of which were bilingual. Second, they used a different curriculum. The curriculum had several differences, including different projects, different formatting of their \ts{} worksheets, different individual questions on the \ts{} worksheets, and slightly different content (no coverage of conditional loops). Our goal is to gain insight into what findings based on the use of \ts{} hold across curricula and age groups.
+% \subsection{Relating to Prior Work}
+% \label{sec:compare}
+% Here we compare the results in our study with the results of one previously-published study on
+% student behavior using \ts{} \cite{franklin2020exploring}. There are 2 major differences between their study and our study. First, their study consisted of only 4th-grade classrooms, many of which were bilingual. Second, they used a different curriculum. The curriculum had several differences, including different projects, different formatting of their \ts{} worksheets, different individual questions on the \ts{} worksheets, and slightly different content (no coverage of conditional loops). Our goal is to gain insight into what findings based on the use of \ts{} hold across curricula and age groups.
 
-To perform this comparison, we focus on the findings in both papers and compare which ones are both present and whether they align or are contradictory. 
+% To perform this comparison, we focus on the findings in both papers and compare which ones are both present and whether they align or are contradictory. 
 
-\begin{table}
-    \centering
-%\includegraphics[width=\textwidth]{class_nums.png}
-\begin{tabular}{| c | c |} 
-      \hline
-Comparison & Finding \\ \hline
-Similar & Students completed and correctly answered ``Observe'' questions the most \\ \hline
-Similar & Students leave the most blank answers in ``Explore'' questions \\ \hline
-Dissimilar & Our study's students had higher \textit{accuracy} on ``Explore'' questions than prior study \\ \hline
-Similar & Completion and accuracy rates differ by teacher \\ \hline
-Similar & \ts{} completion and accuracy are not correlated with project completion \\ \hline
-
-
-
-%\multicolumn{3}{|l|}{Total} & 317 \\ \hline
-   \end{tabular}
-
-    \caption{Findings Comparison}
-    \label{tab:table2}
-\end{table}
+% \begin{table}
+%     \centering
+% %\includegraphics[width=\textwidth]{class_nums.png}
+% \begin{tabular}{| c | c |} 
+%       \hline
+% Comparison & Finding \\ \hline
+% Similar & Students completed and correctly answered ``Observe'' questions the most \\ \hline
+% Similar & Students leave the most blank answers in ``Explore'' questions \\ \hline
+% Dissimilar & Our study's students had higher \textit{accuracy} on ``Explore'' questions than prior study \\ \hline
+% Similar & Completion and accuracy rates differ by teacher \\ \hline
+% Similar & \ts{} completion and accuracy are not correlated with project completion \\ \hline
 
 
-\textbf{Observe, Predict, and Explore.} 
-In both studies, students answered ``Observe'' questions most often and most accurately. In addition, ``Explore'' questions were answered incorrectly the most often. That these trends hold across both studies suggests that these trends are likely inherent in these types of questions. 
 
-Thinking about the 3 types of questions, this is perhaps not surprising, because ``Observe'' questions ask about what they see in a running program, which is analogous to merely using a program. ``Predict'' and ``Explore'' questions are inherently more difficult but for different reasons. ``Predict'' questions are more cognitively difficult, asking about which block performed which action. ``Explore'' questions, on the other hand, require students to make specific changes and compare the output before the change to after the change. This requires that the student actually perform the change properly and remember the prior output accurately. Students may just attempt to guess what will happen if they do not want to go through the work of changing it.
+% %\multicolumn{3}{|l|}{Total} & 317 \\ \hline
+%    \end{tabular}
 
-%One of our findings was that students answered ``Observe'' questions the most and were more correct on these questions than ``Predict'' and ``Explore'' questions. Students were least likely to attempt ``Predict'' questions. Although ``Explore'' questions were answered more than ``Predict'' questions, ``Explore'' questions had the greatest percentage of incorrect answers. Comparing our findings with previous work, we find that both previous work (with 4th grade students) and our work (with 4th-7th grade students) revealed that students who use \ts{} completed and correctly answered ``Observe'' questions the most \cite{franklin2020exploring}. In contrast, students in our data set answered ``Explore'' questions the least but also answered them more correctly than students in the prior work \cite{franklin2020exploring}.
+%     \caption{Findings Comparison}
+%     \label{tab:table2}
+% \end{table}
 
-%The ``Observe'' questions require students to participate in the learning process, but do not require the cognitive engagement of predicting the outcome, or exploring the effects of changing the code after the fact. This may provide insight into why the ``Observe'' questions were not only answered more often than the other 2 categories, but also were answered correctly more often. The ``Observe'' questions may require less of a cognitive leap than ``Predict'' or ``Explore'' questions, which require more insight into the functionality of the operations in the code. This may also be why our findings are consistent with previous findings about ``Observe'' questions.
 
-It is also interesting that the ``Explore'' questions were attempted more often in this work than the ``Predict'' questions, which may provide insight into the student learning process. There is perhaps less of a cognitive barrier to changing the code and inspecting the behavior (``Explore'') than predicting the outcome without the opportunity to explore the effects of the code change (``Predict''). This may also explain why students answered more ``Explore'' questions incorrectly than the other questions. We believe that our current results differ from previous results \cite{franklin2020exploring} because our dataset includes students from 4th through 7th grade. The older students may become tired less easily and also complete the work more quickly. The younger students in the previous study may have also focused on the coding part of the ``Explore'' section and forgotten to complete the worksheet part of the section. These findings suggest a need for more guidance and support for the ``Predict'' and ``Explore'' questions. Specifically, we need to encourage students to attempt ``Predict'' questions more. For ``Explore'' questions, further examination is needed to see why their answers are incorrect more often.
+% \textbf{Observe, Predict, and Explore.} 
+% In both studies, students answered ``Observe'' questions most often and most accurately. In addition, ``Explore'' questions were answered incorrectly the most often. That these trends hold across both studies suggests that these trends are likely inherent in these types of questions. 
 
-%\textbf{Module and Teacher.} %We found that across 2 modules, student performance with \ts{} did not significantly vary based on grade level. However, their performance did vary between modules and between teachers. Some of these findings are consistent with previous findings \cite{franklin2020exploring}. Because of \ts{}'s similar effectiveness across grade levels in middle-grade students, it may be particularly adept for environments where only 1 teacher is responsible for teaching computing concepts to students from several different grades. Franklin et al. discovered that across grade levels, students were able to complete the activities \cite{franklin2020analysis}. We analyzed the students' performance at various grade levels. First, we found that 6th graders differed from 4th and 7th in M1:Basics. We believe that this may be the case because the 6th grade teachers may have been more experienced. We also found that 7th graders differed from 5th graders in M3:Animation and 6th graders differed from 5th graders in M4:CondLoops. This suggests that 5th graders may need more support in some modules and that even though students in all grade levels may be able to complete \ts{}, they may still struggle with answering questions correctly. Tied to that finding is our finding that performance differed between modules. M3:Animation had the lowest average \ts{} scores. This further supports the idea that modules vary in difficulty and students also need varying support. 
+% Thinking about the 3 types of questions, this is perhaps not surprising, because ``Observe'' questions ask about what they see in a running program, which is analogous to merely using a program. ``Predict'' and ``Explore'' questions are inherently more difficult but for different reasons. ``Predict'' questions are more cognitively difficult, asking about which block performed which action. ``Explore'' questions, on the other hand, require students to make specific changes and compare the output before the change to after the change. This requires that the student actually perform the change properly and remember the prior output accurately. Students may just attempt to guess what will happen if they do not want to go through the work of changing it.
 
-%Similar to this study, Franklin et al. found that the completion rates of \ts{} differed based on teacher \cite{franklin2020analysis}. \cite{franklin2020analysis} hypothesized that the flexibility of the curriculum could be a cause of this finding. %This could also explain our finding of differences in scores between teachers. 
-%Students' scores could be affected by how individual teachers choose to implement the curriculum. %Based on these results, we believe that \ts{} should be adapted for varying grade levels in some modules. 
-%We also need to further investigate how the teachers are implementing \Scratchencore{} and \ts{} to understand what the most effective practices are and encourage other teachers to follow those practices. 
+% It is also interesting that the ``Explore'' questions were attempted more often in this work than the ``Predict'' questions, which may provide insight into the student learning process. There is perhaps less of a cognitive barrier to changing the code and inspecting the behavior (``Explore'') than predicting the outcome without the opportunity to explore the effects of the code change (``Predict''). This may also explain why students answered more ``Explore'' questions incorrectly than the other questions. We believe that our current results differ from previous results \cite{franklin2020exploring} because our dataset includes students from 4th through 7th grade. The older students may become tired less easily and also complete the work more quickly. The younger students in the previous study may have also focused on the coding part of the ``Explore'' section and forgotten to complete the worksheet part of the section. These findings suggest a need for more guidance and support for the ``Predict'' and ``Explore'' questions. Specifically, we need to encourage students to attempt ``Predict'' questions more. For ``Explore'' questions, further examination is needed to see why their answers are incorrect more often.
 
-\textbf{\ts{} and Projects.} Similar to findings from previous work \cite{franklin2020exploring}, our analysis revealed the correlation between \ts{} worksheet score and project score was weak. 
+% \textbf{\ts{} and Projects.} Similar to findings from previous work \cite{franklin2020exploring}, our analysis revealed the correlation between \ts{} worksheet score and project score was weak. 
 
-When we take 2 findings together (teacher influences worksheet completion and accuracy and worksheets do not correlate with project score) and triangulate that with our observation field notes, a possible theory emerges. 
- Different teachers place different emphasis on accurate completion of the worksheet. One teacher, for example, had students check off their completed worksheet with the teacher. If it was not correct or complete, the teacher required that they go back and try again until it was correct. That teacher did not allow students to continue to modify without accurately completing the \ts{}. Another teacher, on the other hand, went over the worksheet with the entire class before moving on. Both techniques are based on sound pedagogical principles - they wanted to make sure students had some basic understanding of the \ts{} exercise prior to moving on. In both classrooms, we would expect to see higher completion and accuracy than other classrooms. In addition, the first teacher's technique may lead to better learning since students needed to figure out the answers themselves rather than being told by the teacher later. Because teachers varied in how they treated the worksheet, it is not unexpected that the completion and accuracy differed. In addition, these differences could also affect the correlation with understand and/or project performance.
+% When we take 2 findings together (teacher influences worksheet completion and accuracy and worksheets do not correlate with project score) and triangulate that with our observation field notes, a possible theory emerges. 
+%  Different teachers place different emphasis on accurate completion of the worksheet. One teacher, for example, had students check off their completed worksheet with the teacher. If it was not correct or complete, the teacher required that they go back and try again until it was correct. That teacher did not allow students to continue to modify without accurately completing the \ts{}. Another teacher, on the other hand, went over the worksheet with the entire class before moving on. Both techniques are based on sound pedagogical principles - they wanted to make sure students had some basic understanding of the \ts{} exercise prior to moving on. In both classrooms, we would expect to see higher completion and accuracy than other classrooms. In addition, the first teacher's technique may lead to better learning since students needed to figure out the answers themselves rather than being told by the teacher later. Because teachers varied in how they treated the worksheet, it is not unexpected that the completion and accuracy differed. In addition, these differences could also affect the correlation with understand and/or project performance.
  
- \subsection{Unique Findings}
- We now discuss findings that were not in prior work in order to explore possible explanations and implications.
+%  \subsection{Unique Findings}
+%  We now discuss findings that were not in prior work in order to explore possible explanations and implications.
 
-\textbf{``Everyday True Positive'', ``Everyday False Positive'', and ``X-Y Coordinate''.} We found a significant difference in students' likeliness to answer, and answer accurately, questions that pertain to blocks or concepts that can be interpreted based on real-world, everyday concepts. In other words, \ts{} worksheet questions that involved x-y coordinates and questions concerning blocks or concepts that a have a real world, everyday interpretation that does not match with their role in Scratch (``Everyday False Positive'' questions) impact student engagement as ``X-Y Coordinate'' questions are answered incorrectly the most often and ``Everyday False Positive'' are the most frequently skipped and the least frequently answered correctly. 
+% \textbf{``Everyday True Positive'', ``Everyday False Positive'', and ``X-Y Coordinate''.} We found a significant difference in students' likeliness to answer, and answer accurately, questions that pertain to blocks or concepts that can be interpreted based on real-world, everyday concepts. In other words, \ts{} worksheet questions that involved x-y coordinates and questions concerning blocks or concepts that a have a real world, everyday interpretation that does not match with their role in Scratch (``Everyday False Positive'' questions) impact student engagement as ``X-Y Coordinate'' questions are answered incorrectly the most often and ``Everyday False Positive'' are the most frequently skipped and the least frequently answered correctly. 
 
-In the state where we collected data, the coordinate system is not covered until 5th grade. Additionally, coverage of a concept does not ensure that students understand them. Given these facts, we theorize that the students who struggled in these questions were ones that have not learned the coordinate system yet to the point where they are comfortable, confident, and accurate in their use of it. Further research is required to learn if this is the case. If so, we should offer additional support for learning blocks and concepts that require mathematical knowledge beyond students' mathematical instruction.
+% In the state where we collected data, the coordinate system is not covered until 5th grade. Additionally, coverage of a concept does not ensure that students understand them. Given these facts, we theorize that the students who struggled in these questions were ones that have not learned the coordinate system yet to the point where they are comfortable, confident, and accurate in their use of it. Further research is required to learn if this is the case. If so, we should offer additional support for learning blocks and concepts that require mathematical knowledge beyond students' mathematical instruction.
  
-``Everyday False Postive'' questions can also be confusing to students. They may interpret the Scratch blocks using their knowledge of what the words mean in everyday language. For example, asking the students to change the value in a \texttt{move} block and then observing how that changed a sprite's behavior, or what the \texttt{wait () seconds} block does. It is important that teachers recognize the differences between everyday interpretations and Scratch interpretations and explicitly teach what it means in Scratch.
+% ``Everyday False Postive'' questions can also be confusing to students. They may interpret the Scratch blocks using their knowledge of what the words mean in everyday language. For example, asking the students to change the value in a \texttt{move} block and then observing how that changed a sprite's behavior, or what the \texttt{wait () seconds} block does. It is important that teachers recognize the differences between everyday interpretations and Scratch interpretations and explicitly teach what it means in Scratch.
 
-%Encouragingly, if the blocks or concepts tested do have a real world, everyday interpretation that does not match with their role in Scratch, students are still able to answer the question with comparable correctness to questions where the everyday interpretation does match. This suggests that students are able to separate the blocks and concepts from everyday concepts and learn programming.
+% \textbf{Question Location}. Students tended to attempt fewer questions, and answer them with decreasing accuracy, as they progressed through the worksheet. This was most dramatic in the final section of the worksheet. These findings could be due to cognitive fatigue \cite{sievertsen2016cognitive}. That is, students may become fatigued from answering questions from the beginning of a section to the end of a section, and from the beginning of a worksheet to the end of a worksheet.  In order for students to have the desired learning outcomes, we must further understand the sources of worksheet fatigue and work to mitigate these effects where possible. This might entail worksheets of varying length and providing an option to pause and restart a given worksheet at a later time, along with a study to see if such methods improve learning fatigue.
 
-\textbf{Question Location}. Students tended to attempt fewer questions, and answer them with decreasing accuracy, as they progressed through the worksheet. This was most dramatic in the final section of the worksheet. These findings could be due to cognitive fatigue \cite{sievertsen2016cognitive}. That is, students may become fatigued from answering questions from the beginning of a section to the end of a section, and from the beginning of a worksheet to the end of a worksheet.  In order for students to have the desired learning outcomes, we must further understand the sources of worksheet fatigue and work to mitigate these effects where possible. This might entail worksheets of varying length and providing an option to pause and restart a given worksheet at a later time, along with a study to see if such methods improve learning fatigue.
+% \textbf{Math and Programming.} There were not any differences in student outcomes based on previous experience with programming, indicating \ts{} may have served effectively as an equitable factor across differences in parent-reported previous programming experience. This further bolsters the argument to use \ts{} in diverse classroom environments where students have varying levels of programming experience and are not able to receive highly personalized attention from educators. 
 
-\textbf{Math and Programming.} There were not any differences in student outcomes based on previous experience with programming, indicating \ts{} may have served effectively as an equitable factor across differences in parent-reported previous programming experience. This further bolsters the argument to use \ts{} in diverse classroom environments where students have varying levels of programming experience and are not able to receive highly personalized attention from educators. 
+% Results were more mixed with respect to parent-reported mathematics struggles, where students with math struggles performing similarly in some modules and under-performing in other modules. This echoes prior work that has found differences in CS assessment performance %between 4th grade students ~\cite{salac2020comprehending} and 
+% middle-school students \cite{grover2016factors,qian2016correlates} of different math levels, with differences becoming more prevalent in more advanced CT concepts. However, we do have to keep in mind that our data was collected from parental reports instead of more objective assessments. Due to \ts{}'s abilities to support students regardless of prior programming experience and support students who struggle with mathematics in some modules, \ts{} should be used with middle-grade students. However, we should increase the support in modules where \ts{} was unable to equalize students who struggle with math with students who do not.
 
-Results were more mixed with respect to parent-reported mathematics struggles, where students with math struggles performing similarly in some modules and under-performing in other modules. This echoes prior work that has found differences in CS assessment performance %between 4th grade students ~\cite{salac2020comprehending} and 
-middle-school students \cite{grover2016factors,qian2016correlates} of different math levels, with differences becoming more prevalent in more advanced CT concepts. However, we do have to keep in mind that our data was collected from parental reports instead of more objective assessments. Due to \ts{}'s abilities to support students regardless of prior programming experience and support students who struggle with mathematics in some modules, \ts{} should be used with middle-grade students. However, we should increase the support in modules where \ts{} was unable to equalize students who struggle with math with students who do not.
+% \textbf{Module and Teacher.} We found that across 2 modules, student performance with \ts{} did not significantly vary based on grade level. However, their performance did vary between modules and between teachers. Because of \ts{}'s similar effectiveness across grade levels in middle-grade students, it may be particularly adept for environments where only one teacher is responsible for teaching computing concepts to students from several different grades. 
 
-\textbf{Module and Teacher.} We found that across 2 modules, student performance with \ts{} did not significantly vary based on grade level. However, their performance did vary between modules and between teachers. Because of \ts{}'s similar effectiveness across grade levels in middle-grade students, it may be particularly adept for environments where only one teacher is responsible for teaching computing concepts to students from several different grades. 
+% We also analyzed the students' performance at various grade levels. First, we found that 6th graders differed from 4th and 7th in M1:Basics. We believe that this may be the case because the 6th grade teachers may have been more experienced. We also found that 7th graders differed from 5th graders in M3:Animation and 6th graders differed from 5th graders in M4:CondLoops. This suggests that 5th graders may need more support in some modules and that even though students in all grade levels may be able to complete \ts{}, they may still struggle with answering questions correctly. Tied to that finding is our finding that performance differed between modules. M3:Animation had the lowest average \ts{} scores. This further supports the idea that modules vary in difficulty and students also need varying support. 
 
-We also analyzed the students' performance at various grade levels. First, we found that 6th graders differed from 4th and 7th in M1:Basics. We believe that this may be the case because the 6th grade teachers may have been more experienced. We also found that 7th graders differed from 5th graders in M3:Animation and 6th graders differed from 5th graders in M4:CondLoops. This suggests that 5th graders may need more support in some modules and that even though students in all grade levels may be able to complete \ts{}, they may still struggle with answering questions correctly. Tied to that finding is our finding that performance differed between modules. M3:Animation had the lowest average \ts{} scores. This further supports the idea that modules vary in difficulty and students also need varying support. 
 
-%Similar to this study, Franklin et al. found that the completion rates of \ts{} differed based on teacher \cite{franklin2020analysis}. \cite{franklin2020analysis} hypothesized that the flexibility of the curriculum could be a cause of this finding. %This could also explain our finding of differences in scores between teachers. 
-%Students' scores could be affected by how individual teachers choose to implement the curriculum. %Based on these results, we believe that \ts{} should be adapted for varying grade levels in some modules. 
-%We also need to further investigate how the teachers are implementing \Scratchencore{} and \ts{} to understand what the most effective practices are and encourage other teachers to follow those practices. 
+% \section{Limitations}
+% \label{sec:limits}
+% The data collection was interrupted by the COVID-19 pandemic and the subsequent switch to online learning. Classroom \Scratchencore{} instruction ended in many cases when classes unexpectedly switched to an online format. While the number of student-presented questions and answers overall is large, the size of a given class or the sample of students given a certain worksheet varied, as different classes completed varying numbers of modules, with fewer classes completing Modules 3 and 4. Additionally, for our first 4 modules, which were the modules we analyzed, the only blocks we covered that required mathematics knowledge are blocks that include using the x-y coordinate system. Future research should investigate other blocks and concepts that can be interpreted differently in subjects outside of CS. 
+% Finally, there are limitations involved in the demographic survey in which parents reported if their student struggled to complete their mathematics homework or if they have experience in programming. Parent answers may be exaggerated, the parents may feel embarrassed to reveal if their student struggles in school, and students may feel embarrassed to reveal to their parents if they struggle in school.
 
-%This result seems to contradict our result about ``Everyday'' compared to ``Mathematics'' interpretation. Since the questions labeled as ``Mathematics'' questions were about the coordinate system, it does not represent all of the concepts students from 4th to 7th grade learn in math. Therefore, students, especially older students, may struggle with mathematics concepts that are unrelated to the Scratch concepts learned in the first 4 modules of \Scratchencore{}; this suggests that our results are consistent with each other.
-
-\section{Limitations}
-\label{sec:limits}
-% Some of the findings may be more significant for certain groups and certain classes than others and further study would be needed to identify these attributes of the trends. It would be worth investigating how these trends correlate across classroom size, gender, grade level, and specific teacher.
-The data collection was interrupted by the COVID-19 pandemic and the subsequent switch to online learning. Classroom \Scratchencore{} instruction ended in many cases when classes unexpectedly switched to an online format. While the number of student-presented questions and answers overall is large, the size of a given class or the sample of students given a certain worksheet varied, as different classes completed varying numbers of modules, with fewer classes completing Modules 3 and 4. Additionally, for our first 4 modules, which were the modules we analyzed, the only blocks we covered that required mathematics knowledge are blocks that include using the x-y coordinate system. Future research should investigate other blocks and concepts that can be interpreted differently in subjects outside of CS.%Additionally, future work could include classroom observations, student interviews, or teacher interviews, which may provide insights into some of the findings in this paper, as differences in teaching style might have influenced student engagement with the \ts{} worksheet and further analysis into student perspectives could provide insight for our findings. 
-Finally, there are limitations involved in the demographic survey in which parents reported if their student struggled to complete their mathematics homework or if they have experience in programming. Parent answers may be exaggerated, the parents may feel embarrassed to reveal if their student struggles in school, and students may feel embarrassed to reveal to their parents if they struggle in school.
-
-\section{Conclusions}
-\label{sec:conclusions}
-As CS education is provided to larger quantities and diverse audiences of middle-school students, it is important that we closely examine instructional methods for their use across several grades. In this paper, we explore the \ts{} strategy and its enactment in \Scratchencore. We find that, for the most part, the trends observed at the 4th-grade level in a different curriculum held with this middle-school implementation: students complete ``Observe'' questions most often and accurately, teachers are correlated with worksheet performance, and worksheet performance is not correlated with project performance. This study also had additional findings, such as that students' prior experience with programming had no effect on worksheet performance, and math struggles only affected performance for some modules. Finally, students completed more often and with more accuracy questions about Scratch blocks that have a meaning in Scratch similar to the way a student might interpret that block's meaning according to an every-day interpretation than questions referencing x-y coordinate systems and questions that have a meaning in Scratch that is not similar to the way a student may interpret that block's meaning according to an every-day interpretation. We also discovered that students lose engagement and accuracy as they progress toward the end of a \ts{} worksheet. %These results provide insight into how and where \ts{} is most effective for middle-grade students and how we can increase our support for these students.
-
-%Our analysis reveals that the \umc pedagogical approach%, as enacted through the \Scratchencore{}, provided students a productive balance between structure and open-ended exploration. During open-ended tasks, many students followed guidance in reinforcing new knowledge by utilizing blocks they had just learned. They also explored new blocks not formally introduced, as well as combined existing blocks in new ways. At the same time, students also took advantage of the open-endedness afforded by the Create tasks to explore new blocks as well as to personalize backgrounds, sprites, and narratives to take ownership of their projects and express themselves creatively. Collectively, this work shows one way forward to incorporate the powerful ideas of constructionism learning into the constraints of classrooms, providing one potential path out of the Play Paradox. In doing so, this work helps provide guidance as to one productive way to help bring computing to all learners.
+% \section{Conclusions}
+% \label{sec:conclusions}
+% As CS education is provided to larger quantities and diverse audiences of middle-school students, it is important that we closely examine instructional methods for their use across several grades. In this paper, we explore the \ts{} strategy and its enactment in \Scratchencore. We find that, for the most part, the trends observed at the 4th-grade level in a different curriculum held with this middle-school implementation: students complete ``Observe'' questions most often and accurately, teachers are correlated with worksheet performance, and worksheet performance is not correlated with project performance. This study also had additional findings, such as that students' prior experience with programming had no effect on worksheet performance, and math struggles only affected performance for some modules. Finally, students completed more often and with more accuracy questions about Scratch blocks that have a meaning in Scratch similar to the way a student might interpret that block's meaning according to an every-day interpretation than questions referencing x-y coordinate systems and questions that have a meaning in Scratch that is not similar to the way a student may interpret that block's meaning according to an every-day interpretation. We also discovered that students lose engagement and accuracy as they progress toward the end of a \ts{} worksheet. 
 
 \section{Acknowledgements}
 \label{sec:ack}
