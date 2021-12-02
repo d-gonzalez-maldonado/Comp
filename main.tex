@@ -157,10 +157,27 @@ of the 2021 International Computing Education Research Conference (ICER’21), A
 \label{sec:background}
 \thispagestyle{empty}
 
+\subsection{constructionism, use modify create, and tipp\&see}
+
+\subsection{Trauma-based curriculum design}
+
+\subsection{Maslow's Hierarchy of Needs}
+
 % In this section, we present the major theoretical and practical influences that shaped this work. This includes prior work on theories concerning learning, teaching strategies, and middle-grade computing education curricula and pedagogy.
 
 % \subsection{Theoretical Orientation}
-% This work draws on constructionist learning theory and the concepts of the \textit{Zone of Proximal Development} (ZPD) and \textit{instructional scaffolding}. Constructionist learning theory focuses on developing opportunities for learners to construct their own knowledge, rather than the focusing on directly transmitting this knowledge to students through direct instruction \cite{Papert:1980}. Constructionist activities place students in project-based learning activities so they can learn through connecting what they already know to discoveries they make in the process of creating artifacts of their own \cite{papert1991situating, papert1993children}. Allowing students the freedom to construct their own understanding can lead to a number of challenges when employed in formal education contexts, such as keeping students on the intended learning trajectory and ensuring they learn specific content. In this process, some students may never reach the conclusions necessary or achieve the learning objectives of the activity. This tension between learner agency and externally defined learning goals, called the \textit{play paradox}, highlights the need for a strategy to support student exploration under sufficient constraints to ensure that specific learning outcomes are achieved \cite{noss1996windows}.
+This work draws on constructionist learning theory and the concepts of the \textit{Zone of Proximal Development} (ZPD) and \textit{instructional scaffolding}. Constructionist learning theory focuses on developing opportunities for learners to construct their own knowledge, rather than the focusing on directly transmitting this knowledge to students through direct instruction \cite{Papert:1980}. Constructionist activities place students in project-based learning activities so they can learn through connecting what they already know to discoveries they make in the process of creating artifacts of their own \cite{papert1991situating, papert1993children}. %Allowing students the freedom to construct their own understanding can lead to a number of challenges when employed in formal education contexts, such as keeping students on the intended learning trajectory and ensuring they learn specific content. 
+
+Cite TIPP\&SEE work that illustrates that activites of this nature (Use/Modify/Create with scaffolding) lead to learning, but we don't have direct evidence collected in this project. (this statement might belong in discussion, not here) 
+
+\subsection{Analyzing large datasets of scratch code}
+
+\cite{aivaloglou2016kids}
+\cite{aivaloglou2017dataset}
+\cite{yang2015uncovering}
+\cite{fields2014programming}
+\cite{dasgupta2016remixing}
+\cite{robles2017software}
 
 % The zone of proximal development describes the link between a student’s current abilities and their potential developmental achievements that can be attained through the guidance and encouragement from another, more skilled student \cite{vygotsky1980mind}. By providing further challenges to some students and through the use of instructional scaffolding— individualized support from the instructor that will be gradually removed— to others, the instructor can leverage each activity to keep students within their ZPD. This approach both maintains every student’s engagement and supports their individualized learning growth \cite{nasir2006, wood1976role}.
 
@@ -268,18 +285,19 @@ To quantify the extent to which the \cvd{} pandemic and subsequent disruptions t
 person learning affected the efficacy of and extent to which CS instruction took place at the elementary and middle school level we collected both large scale as well as individualized data of \Scratchencore{}.
 
 \subsection{Data Collection}
-We collected both large scale, publicly available, data as well as individualized student data from
-classes in our partner district. The first portion of our data consists the metadata for every
- single project that was `remixed' from the Scratch Encore account and then shared publicly.
- A total of 26,826 projects were found by our web scraper of which 26,009 were created
- between August 2018 and July 2021. We also looked at teacher registrations for the 
- \Scratchencore{} curriculum; these include basic demographic information such as email
- addresses, teaching position, type of students, and location. The individualized school data
- was reported by teachers from our partner district and include the number of \Scratchencore{}
- modules completed each year as well as the completed Scratch projects for each of their
- students. All teachers taught the \Scratchencore{} for at least 2 out of the last 3 years: either
- before and during the pandemic year or during the pandemic year and in the subsequent
- online only year.
+We collected data from three distinct sources:
+\begin{enumerate}
+    \item Classroom data:provided to us by teachers from our partner district.
+    \item \Scratchencore{} teacher registrations: collected by us anytime a teacher requests access to the material.
+    \item Web scraped data: gathered from Sratch.
+\end{enumerate}
+\subsubsection{Classroom Data}
+Fifteen teachers were recruited for this IRB-approved study from a large, urban school district in the United States and underwent the same professional development to teach the \Scratchencore{} to students aged 9-10. A total of 16 classrooms participated in the study, including six of bilingual (English and Spanish) classrooms. Prior to the pandemic instruction took place in a conventional classroom environment, however, following the lockdown orders instruction took place entirely in an online setting. In order to avoid "zoom fatuige" instruction was limited to block of up to XXX minutes with a break in between.
+\subsubsection{\Scratchencore{} Teacher Registrations}
+Before an instructor is able to access the lesson plans and other class materials that make
+up the \Scratchencore{} they must first fill out a simple registration form that collects basic demographic information such as email addresses, teaching position, type of students, and location. We then filtered out registrations from people who indicated they were not teachers (mainly researchers and grad students). We also used the email address provided to distinguish between teachers from our partner district and other teachers.
+\subsubsection{Web Scraped Data}
+Given the constructivist nature of the \Scratchencore{}, a key aspect of all instructional modules involves providing students with a semi-complete starter project that they then modify based on what they learned in that module. We downloaded the metadata for every single project that was `remixed' from the \Scratchencore{} account and then shared publicly. A total of 26,826 projects were found by our web scraper of which 26,009 were created between August 2018 and July 2021.
 
 \subsection{Data Analysis}
 
@@ -301,7 +319,7 @@ make a animate sprite movement, the autograder would parse the code and search f
 ``move'' and ``wait'' blocks nested within a “repeat” block. Given the open-ended nature
 of coding it is possible for students to create a project that satisfies ``the spirit'' of the
 requirements but does so in a way that is so unique or convoluted that it would be missed 
-by the autogrades, nevertheless, these situations are extremely rare.
+by the autograders, nevertheless, these situations are extremely rare.
 % Our analysis focused on 3 sources of data: \ts{} worksheets, computational artifacts (Modify and Create projects), and student demographic surveys. The analysis primarily focused on the \ts{} worksheets, with data from computational artifacts and demographic surveys being used to situate emerging findings and gain an understanding of additional factors that might be driving behavior found in worksheet data.
 
 % To further contextualize and understand trends observed in the data, all worksheet questions were analyzed in 3 distinct ways. First, each question was categorized based on what students were asked to do and how it aligned to the \ts{} phase, either ``Observe'', ``Predict'', or ``Explore'', described above. %``Observe'' questions ask the students to observe and report what they see happens when they run the code or when they look inside the code at the scripts. ``Predict'' questions ask the students to predict the function of a block without changing the code, requiring students to demonstrate a theoretical understanding of the function of blocks. ``Explore'' questions ask the students to retrospectively determine the function of a block after changing the code and observing the results. 
@@ -374,6 +392,12 @@ we dive into individual student project completion data.
     
 \end{figure}
 \subsection{\Scratchencore{} Activity Over Time}
+
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: Instruction everywhere stopped immediately following the federal government’s declaration of a national lockdown.}
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: Instruction rebounded to pre-pandemic levels during the post-pandemic year.}
+
 We begin by presenting the \Scratchencore{} project activity levels. Figure \ref{fig:daily_remixes}
  represents every Scratch project that was remixed from the Scratch Encore account and 
  then publicly shared from 2018 to 2021. The red bars represent the number of daily remixes 
@@ -390,9 +414,6 @@ This level of detail allows us to present a picture of just how suddenly student
  educators had been provided with the opportunity to plan an orderly transition or perhaps 
  that different districts were shutting down at different times.
 
-
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Instruction everywhere stopped immediately following the federal government’s declaration of a national lockdown; Instruction rebounded to pre-pandemic levels during the post-pandemic year.}
 Furthermore, we see no evidence that any substantial level of instruction was accomplished
 following the transition to emergency learning. By contrast, instruction levels rebounded
 strongly during the post pandemic year with the first quarter of the 2020-2021 
@@ -419,22 +440,23 @@ peaks and valleys than in the pre-pandemic year.
     % \caption{\ts{} Overall Student Performance Results}
     
 \end{figure}
-Before an instructor is able to access the lesson plans and other class materials that make
-up the \Scratchencore{} they must first fill out a simple registration form. Figure 
-\ref{fig:teacher_registrations} shows the number of new teachers registering to
+\stepcounter{findingnum}\\
+\textit{Finding \arabic{findingnum}: The increase in project activity observed
+during the 2020-2021 online school year coincided with a surge in new teacher \Scratchencore{} registrations.}\\
+
+Figure \ref{fig:teacher_registrations} shows the number of new teachers registering to
 receive access to the scratch encore curriculum on any given month. The more saturated
 colors depict instructors from our partner district (as determined by the email they used
 during registration) while the darker colors represent everyone else. 
 Of note, is the fact that there is a huge increase in the total number of registrations starting
 the summer of the pandemic school year. This is particularly noticeable during July and
-August of 2020. A factor contributing to the increase is the fact that during the summer
+August of 2020. 
+
+A factor contributing to the increase is the fact that during the summer
 of 2020 our lab started online PD courses for teachers in our partner district; however,
 it is clear that the overwhelming majority of new registrations came from teachers who
 were not part of our partner district. 
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: The increase in project activity observed
-during the 2020-2021 online school year was predominantly driven by new teachers
-introducing the \Scratchencore{} curriculum to their classrooms for the first time.}\\
+
 \subsection{Partner District Teacher and Student Data}
 We now transition to discussing data gathered from our partner district; the data presented
 was gathered from teachers who taught the \Scratchencore{} for at least two out
@@ -480,6 +502,10 @@ of the three years covered, one of which being the pandemic year.
     % \caption{\ts{} Overall Student Performance Results}
     
 \end{figure}
+\\
+\stepcounter{findingnum}
+\textit{Finding \arabic{findingnum}: Teachers were able to cover an equivalent amount
+of \Scratchencore{} modules with online instruction as they had been able to cover in person.}\\
 
 Figure \ref{fig:modules_completed} shows the total number of completed modules by 
 teachers in our partner districts. As noted in figure \ref{fig:daily_remixes}, 
@@ -487,27 +513,14 @@ no significant instruction took place after the lockdown measures were announced
 therefore not particularly surprising that module completion during the pandemic year 
 is so low. Far more interesting is the fact that module completion in the post pandemic 
 year is almost identical to the pre-pandemic year. 
-\\
-\stepcounter{findingnum}
-\textit{Finding \arabic{findingnum}: Teachers were able to cover an equivalent amount
-of \Scratchencore{} modules with online instruction as they had been able to cover in person.}
-\\
-This plot shows the extent to which students completed the requirements for the
-\Scratchencore{} projects of a given module. It is worth noting
-that the daily school schedule of the post pandemic year was wildly different from that
-of the pre pandemic year: to prevent “zoom fatigue” our partner district  limited 
-continuous instructional time.
 
-The data shows that throughout all three years, students were generally able to complete
-the majority of the assignments. We know from figure \ref{fig:daily_remixes} that
-no instuction took place after the lockdown measures were announced which means
-that all the projects from the 2019-2020 school year were completed in a conventional
-classroom setting before the pandemic. 
-years.
 \\
 \stepcounter{findingnum}
 \textit{Finding \arabic{findingnum}: Students were able to complete the \Scratchencore{}
 project requirements at similar rates during online learning as they had with in-person instruction.} 
+\\
+Figure \ref{fig:project_completion} shows the extent to which students completed the requirements for the
+\Scratchencore{} projects of a given module. The data shows that throughout all three years, students were generally able to complete the majority of the assignments. We know from figure \ref{fig:daily_remixes} that no instruction took place after the lockdown measures were announced which means that all the projects from the 2019-2020 school year were completed in a conventional classroom setting before the pandemic.
 
 \section{Discussion}
 % \label{sec:discussion}
